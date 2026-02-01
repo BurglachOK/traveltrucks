@@ -163,7 +163,7 @@ const DetailsPage = () => {
               <div className={css.dateInputContainer}>
                 <input
                   className={css.input}
-                  type={isDateFocused ? "date" : "text"}
+                  type= "date"
                   placeholder="Booking date*"
                   value={isDateFocused ? dateValue : getFormattedDate()}
                   onChange={(e) => setDateValue(e.target.value)}
