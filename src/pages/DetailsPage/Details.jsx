@@ -47,12 +47,6 @@ const DetailsPage = () => {
     minimumFractionDigits: 2,
   }).format(price);
 
-  const getFormattedDate = () => {
-    if (!dateValue) return "";
-    const [year, month, day] = dateValue.split("-");
-    return `${day}.${month}.${year}`;
-  };
-
   const vehicleDetails = [
     ["Form", form], ["Length", length], ["Width", width],
     ["Height", height], ["Tank", tank], ["Consumption", consumption],
@@ -165,7 +159,7 @@ const DetailsPage = () => {
                   className={css.input}
                   type= "date"
                   placeholder="Booking date*"
-                  value={getFormattedDate(dateValue)}
+                  value={dateValue}
                   onChange={(e) => setDateValue(e.target.value)}
                   onFocus={() => setIsDateFocused(true)}
                   onBlur={() => setIsDateFocused(false)}
