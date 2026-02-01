@@ -27,7 +27,7 @@ const DetailsPage = () => {
   const dispatch = useDispatch();
   const [activeTab, setActiveTab] = useState("features");
   const [dateValue, setDateValue] = useState("");
-  const [isDateFocused, setIsDateFocused] = useState(false);
+  const [setIsDateFocused] = useState(false);
 
   useEffect(() => {
     dispatch(fetchById(id));
@@ -165,7 +165,7 @@ const DetailsPage = () => {
                   className={css.input}
                   type= "date"
                   placeholder="Booking date*"
-                  value={dateValue}
+                  value={getFormattedDate(dateValue)}
                   onChange={(e) => setDateValue(e.target.value)}
                   onFocus={() => setIsDateFocused(true)}
                   onBlur={() => setIsDateFocused(false)}
