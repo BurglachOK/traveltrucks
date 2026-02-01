@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 
 const CatalogList = () => {
   const items = useSelector(selectVisibleCars);
-  if (items.length === 0) return <p>Loading...</p>;
+  if (items.length === 0) return <p>Nothing to see here</p>;
 
   return (
     <ul>
