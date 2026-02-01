@@ -165,7 +165,7 @@ const DetailsPage = () => {
                   className={css.input}
                   type= "date"
                   placeholder="Booking date*"
-                  value={isDateFocused ? dateValue : getFormattedDate()}
+                  value={dateValue}
                   onChange={(e) => setDateValue(e.target.value)}
                   onFocus={() => setIsDateFocused(true)}
                   onBlur={() => setIsDateFocused(false)}
