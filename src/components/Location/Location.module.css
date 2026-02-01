@@ -1,0 +1,47 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.inputWrap {
+    position: relative;
+}
+
+.title {
+    color: #6C717B;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+
+.input {
+    box-sizing: border-box;
+    width: 360px;
+    height: 56px;
+    padding: 0px 16px 0px 44px;
+    border: none;
+    background-color: #F7F7F7;
+    font-weight: 400;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #98a2b3;
+}
+
+.icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #667085;
+    pointer-events: none;
+
+}

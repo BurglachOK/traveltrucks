@@ -1,0 +1,34 @@
+.hero {
+    width: 100%;
+    height: calc(100vh - 72px);
+
+    background-image: url("../../assets/images/hero-gb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.wrap {
+    width: 100%;
+    padding: 0 64px;
+    box-sizing: border-box;
+}
+
+.mainText {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 16px 0;
+    color: #F7F7F7;
+}
+
+.heroDesc {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    color: #F7F7F7;
+}

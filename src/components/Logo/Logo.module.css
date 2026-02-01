@@ -1,0 +1,14 @@
+.logoLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #101828;
+}
+
+.logoSvg {
+    transition: transform 0.2s ease;
+}
+
+.logoLink:hover .logoSvg {
+    transform: scale(1.02);
+}

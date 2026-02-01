@@ -1,0 +1,42 @@
+.header {
+    background-color: #f2f4f7;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.linksGap {
+    display: flex;
+    gap: 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.link {
+    text-decoration: none;
+    color: #101828;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.active {
+    color: #e44848;
+}
+
+.mainContent {
+    margin-top: 72px;
+
+}
